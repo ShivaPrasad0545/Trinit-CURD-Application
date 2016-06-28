@@ -1,0 +1,76 @@
+@CHARSET "ISO-8859-1";
+
+<style>
+
+#primary {
+    float: left;
+    width: 25%;
+}
+
+#content {
+    float: left;
+    width: 50%;
+}
+
+#secondary {
+    float: left;
+    width: 25%;
+}
+
+/*===buttons=====*/
+.btn {
+  background: #34d97b;
+  background-image: -webkit-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: -moz-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: -ms-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: -o-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: linear-gradient(to bottom, #34d97b, #2bb87f);
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 4px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/**==========add employee button========*/
+.add {
+  background: #804000;
+  background-image: -webkit-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: -moz-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: -ms-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: -o-linear-gradient(top, #34d97b, #2bb87f);
+  background-image: linear-gradient(to bottom, #34d97b, #2bb87f);
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 4px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 4px 10px 4px 10px;
+  text-decoration: none;
+}
+
+.add:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</style>
