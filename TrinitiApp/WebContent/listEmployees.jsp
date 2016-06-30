@@ -49,10 +49,10 @@
 						<td><c:out value="${employee.emailId}" /></td>
 						<td><a
 							href="EmployeeController?action=update&employee_Id=<c:out value="${employee.employeeId}"/>"
-							class="btn">Update</a></td>
+							><img alt="edit" src="imgs/edit.png"></a></td>
 						<td><a
 							href="EmployeeController?action=delete&employeeId=<c:out value="${employee.employeeId}"/>"
-							class="btn">Delete</a></td>
+							><img alt="delete" src="imgs/delete.png"></a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
@@ -73,17 +73,12 @@
 
 				</form>
 			</div>
-			<div>
-				<form action="/TrinitiApp/SearchController" method="post">
-					<p style="color: #003399;">Enter Employee Name:</p>
-					<input type="text" name="search"> <input type="submit"
-						value="SEARCH" class="add" style="background: #ff8000">
-				</form>
-			</div>
+			
 		</div>
 
 	</div>
-	<div
-		style="background-image: url('imgs/footer.jpg'); width: 100%; height: 40px;"></div>
+	<div style="background-image: url('imgs/footer.jpg'); width: 100%; height: 40px;">
+	<a  href="Search.jsp" style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">search</a>
+	</div>
 </body>
 </html>

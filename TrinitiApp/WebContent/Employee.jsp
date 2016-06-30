@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <link rel="stylesheet" type="text/css" href="css/app.css">
-
+<script src="formvalid.js"></script>
 <title>Add new employee</title>
 <script type="text/javascript">
 	function callservlet() {
@@ -21,6 +21,7 @@
 			return false;
 		}
 	}
+	
 </script>
 
 </head>
@@ -29,28 +30,28 @@
 		style="background-image: url('imgs/fullheader.jpg'); width: 100%; height: 100px;">
 	</div>
 	<div style="background-image: url('imgs/body.jpg'); height: 500px;">
-		<form method="POST" action='EmployeeController' name="frmAddUser">
+		<form method="POST" action='EmployeeController' name="frmAddEmp" onsubmit='return formValidation()'>
 			<table border=1 align="center"
 				style="border-color: white; color: white;">
 				<tr>
 					<td>Employee ID :</td>
-					<td><input type="text" name="eid" readonly="readonly"
+					<td><input type="text" name="eid" id="eid" readonly="readonly"
 						placeholder="Auto Increment ID"
 						value="<c:out value="${employee.employeeId}"  />" /></td>
 				</tr>
 				<tr>
 					<td>Employee Name :</td>
-					<td><input type="text" name="employeename" required="required"
+					<td><input type="text" name="employeename" id="name" required="required"
 						value="<c:out value="${employee.employeeName}" />" /></td>
 				</tr>
 				<tr>
 					<td>Salary :</td>
-					<td><input type="text" name="salary" required="required"
+					<td><input type="text" name="salary" id="salary" required="required"
 						value="<c:out value="${employee.salary}" />" /></td>
 				</tr>
 				<tr>
 					<td>Email :</td>
-					<td><input type="text" name="email" required="required"
+					<td><input type="text" name="email" id="email" required="required"
 						value="<c:out value="${employee.emailId}" />" /></td>
 				</tr>
 				<tr>
@@ -67,8 +68,8 @@
 			</form>
 		</div>
 	</div>
-	<div
-		style="background-image: url('imgs/footer.jpg'); width: 100%; height: 40px;">
+	<div style="background-image: url('imgs/footer.jpg'); width: 100%; height: 40px;">
+	<a  href="listEmployees.jsp" style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">List Employees</a>
 	</div>
 </body>
 </html>
