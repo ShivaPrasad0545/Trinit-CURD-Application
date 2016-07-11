@@ -7,27 +7,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Show All Employees</title>
+<title>Triniti | All Employees</title>
+<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/app.css">
 <script type="text/javascript">
-	function callservlet() {
-
-		var servletname = document.getdata.fetchdata.value;
-
-		if (servletname == "") {
-			return false;
-		} else {
-			document.location.href = "EmployeeController?action=list";
-			return false;
-		}
-	}
+function callservlet() {	
+	document.location.href = "EmployeeController?action=list";
+}
 </script>
 </head>
 <body style="padding: 0; margin: 0; margin:">
-	<div
-		style="background-image: url('imgs/fullheader.jpg'); width: 100%; height: 100px;">
+<div >
+	<div style="background-image: url('imgs/fullheader.jpg'); width: 100%; height: 100px; ">
 	</div>
-	<div style="background-image: url('imgs/body.jpg'); height: 500px;">
+	<div style="background-image: url('imgs/body.jpg');  width: 100%;height: 500px;">
 		<h3 align="center" style="color: white;">Employee Details :</h3>
 		<table border=1 align="center"
 			style="border-color: white; color: white;">
@@ -65,20 +58,11 @@
 			</p>
 		</div>
 
-		<div align="center">
-			<div>
-				<form name="getdata" action="JsonServlet" method="post">
-					<input type="button" name="fetchdata" value="Home" class="add"
-						style="background: #ff8000" onclick="return callservlet();">
-
-				</form>
-			</div>
-			
-		</div>
-
 	</div>
-	<div style="background-image: url('imgs/footer.jpg'); width: 100%; height: 40px;">
-	<a  href="Search.jsp" style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">search</a>
+	<div style="background-image: url('imgs/footer1.jpg'); width: 100%; height: 40px;">
+	<a  href="Search.jsp" style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">Search</a>
+	<a href="javascript:callservlet();" style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">Home</a>
+	</div>
 	</div>
 </body>
 </html>

@@ -8,18 +8,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <link rel="stylesheet" type="text/css" href="css/app.css">
 
-<title>Add new employee</title>
+<title>Triniti | Search</title>
 <script type="text/javascript">
-	function callservlet() {
-
-		var servletname = document.getdata.fetchdata.value;
-
-		if (servletname == "") {
-			return false;
-		} else {
+	function callservlet() {	
 			document.location.href = "EmployeeController?action=list";
-			return false;
-		}
 	}
 </script>
 
@@ -37,8 +29,8 @@
 				</form>
 			</div>
 	</div>
-	<div style="background-image: url('imgs/footer.jpg'); width: 100%; height: 40px;">
-	<a  href="listEmployees.jsp" style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">List Employees</a>
+	<div style="background-image: url('imgs/footer1.jpg'); width: 100%; height: 40px;">
+	<a href="javascript:callservlet();" name="fetchdata"style="margin-left:25%;text-decoration: none; font-size: 20px; color: white;">Home</a>
 	</div>
 </body>
 </html>
